@@ -1,6 +1,6 @@
-# GlobeTrotter Diaries: Blog
+# A-rons Blog
 
-Welcome to GlobeTrotter Diaries, a place for sharing and reading tales from various trails around the globe. This project encompasses a simple, responsive blog site designed for users to share their travel stories and experiences.
+Welcome to A-rons Blog, a place for sharing and reading tales from various trails around the globe. This project encompasses a simple, responsive blog site designed for users to share their travel stories and experiences.
 
 ## Features
 
@@ -46,4 +46,4 @@ Distributed under the MIT License. See LICENSE for more information.
 Contact
 Aaron Bringhurst - bringhurst.aaron@gmail.com
 
-Project Link: https://github.com/yourusername/yourprojectlink
+Project Link: https://github.com/AaronBringhurst/a-rons-blog
