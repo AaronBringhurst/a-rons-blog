@@ -1,0 +1,146 @@
+/* form.css */
+
+:root {
+    /* light mode color*/
+    --text-color-light: #000;
+    --background-color-light: #fff;
+    /* dark mode color*/
+    --text-color-dark: #EEE;
+    --background-color-dark: #333;
+    --accent-color: #5cb85c;
+    --hover-accent-color: #4cae4c;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+    margin: 0;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+.site-header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    border-bottom: 5px solid black;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.site-header h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #be22aa;
+    font-size: 40px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    height: 100%;
+}
+
+.blog-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background: #fffff6;
+    border-right: 1px solid #000 ;
+
+    img {
+        width: 69%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.blog-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--hover-accent-color)
+}
+
+.site-footer {
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+/* dark mode*/
+body.dark-mode {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+    color: white;
+}
+
+body.dark-mode .container {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+    color: white;
+}

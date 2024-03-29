@@ -1,0 +1,117 @@
+/* blog.css */
+:root {
+    /* light mode color*/
+    --text-color-light: #000;
+    --background-color-light: #fff;
+    /* dark mode color*/
+    --text-color-dark: #EEE;
+    --background-color-dark: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode  {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#modeToggle {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#modeToggle:hover {
+    background-color: #ccc;
+}
+
+.back-button {
+    padding: 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: #333;
+    border: none;
+}
+
+.back-button:hover {
+    background-color: #ccc;
+}
+
+main {
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.dark-mode {
+    color: var(--text-color-dark);
+    background-color: var(--background-color-dark);
+}
+
+.blog-post {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+
+body.dark-mode .blog-post {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #333;
+}
+
+footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
